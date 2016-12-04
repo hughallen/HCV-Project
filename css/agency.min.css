@@ -18,8 +18,8 @@
 body 
 {
     overflow-x: hidden;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    webkit-tap-highlight-color: #CE1B39
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    webkit-tap-highlight-color: #6cc24a
 }
 .btn-primary,
 .btn-xl,
@@ -31,7 +31,7 @@ h4,
 h5,
 h6 
 {
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -39,10 +39,14 @@ h6
 {
     color: #777
 }
+.text-accent
+{
+    color: #6cc24a
+}
 .text-primary,
 a 
 {
-    color: #CE1B39
+    color: #6cc24a
 }
 p 
 {
@@ -66,7 +70,7 @@ a:active,
 a:focus,
 a:hover 
 {
-    color: #ED2946
+    color: #97d700
 }
 .img-centered 
 {
@@ -74,9 +78,13 @@ a:hover
 }
 .img-centered-logo
 {
+	display: block;
+    width: 100%;
+    height: auto;
+    max-width: 670px;
     margin: 0 auto;
     margin-top: -30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     opacity: 0.8;
 }
 .img-centered-company-logo
@@ -88,8 +96,8 @@ a:hover
 .img-centered-team-photo
 {
     margin: 0 auto;
-    width: 250px;
-    height: 250px;
+    max-width: 240px;
+    max-height: 240px;
 }
 .img-centered-preview
 {
@@ -108,8 +116,8 @@ a:hover
 .btn-primary 
 {
     color: #fff;
-    background-color: #CE1B39;
-    border-color: #CE1B39
+    background-color: #6cc24a;
+    border-color: #6cc24a
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -118,8 +126,8 @@ a:hover
 .open .dropdown-toggle.btn-primary 
 {
     color: #fff;
-    background-color: #ED2946;
-    border-color: #ED2946
+    background-color: #97d700;
+    border-color: #97d700
 }
 .btn-primary.disabled,
 .btn-primary.disabled.active,
@@ -137,20 +145,20 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover 
 {
-    background-color: #CE1B39;
-    border-color: #CE1B39
+    background-color: #6cc24a;
+    border-color: #6cc24a
 }
 .btn-primary .badge 
 {
-    color: #CE1B39;
+    color: #6cc24a;
     background-color: #fff
 }
 .btn-xl 
 {
     color: #fff;
-    background-color: #CE1B39;
-    border-color: #CE1B39;
-    border-radius: 0px;
+    background-color: #6cc24a;
+    border-color: #6cc24a;
+    border-radius: 100px;
     font-size: 16px;
     padding: 15px 30px
 }
@@ -161,8 +169,8 @@ fieldset[disabled] .btn-primary:hover
 .open .dropdown-toggle.btn-xl 
 {
     color: #fff;
-    background-color: #ED2946;
-    border-color: #ED2946;
+    background-color: #97d700;
+    border-color: #97d700;
 }
 .btn-xl.disabled,
 .btn-xl.disabled.active,
@@ -180,29 +188,26 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover 
 {
-    background-color: #CE1B39;
-    border-color: #CE1B39
+    background-color: #6cc24a;
+    border-color: #6cc24a
 }
 .btn-xl .badge 
 {
-    color: #CE1B39;
+    color: #6cc24a;
     background-color: #fff
 }
 
-
-
-
-
+/* CUSTOM BUTTON: START */
 
 .btn-xl-opaque 
 {
     opacity: 0.8;
     color: #fff;
-    background-color: #CE1B39;
-    border-color: #CE1B39;
-    border-radius: 0px;
-    font-size: 16px;
-    padding: 15px 30px;
+    background-color: #6cc24a;
+    border-color: #6cc24a;
+    border-radius: 100px;
+    font-size: 14px;
+    padding: 12px 26px;
     margin-right: 20px;
     
 }
@@ -213,8 +218,8 @@ fieldset[disabled] .btn-xl:hover
 .open .dropdown-toggle.btn-xl-opaque 
 {
     color: #fff;
-    background-color: #ED2946;
-    border-color: #ED2946;
+    background-color: #97d700;
+    border-color: #97d700;
 }
 .btn-xl-opaque.disabled,
 .btn-xl-opaque.disabled.active,
@@ -232,21 +237,16 @@ fieldset[disabled] .btn-xl-opaque:active,
 fieldset[disabled] .btn-xl-opaque:focus,
 fieldset[disabled] .btn-xl-opaque:hover 
 {
-    background-color: #CE1B39;
-    border-color: #CE1B39
+    background-color: #6cc24a;
+    border-color: #6cc24a
 }
 .btn-xl-opaque .badge 
 {
-    color: #CE1B39;
+    color: #6cc24a;
     background-color: #fff
 }
 
-
-
-
-
-
-
+/* CUSTOM BUTTON: END */
 
 .navbar-custom 
 {
@@ -255,8 +255,8 @@ fieldset[disabled] .btn-xl-opaque:hover
 }
 .navbar-custom .navbar-brand 
 {
-    color: #CE1B39;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6cc24a;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -265,12 +265,12 @@ fieldset[disabled] .btn-xl-opaque:hover
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:hover 
 {
-    color: #ED2946
+    color: #97d700
 }
 .navbar-custom .nav li a,
 .navbar-custom .navbar-toggle 
 {
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
     text-transform: uppercase
 }
@@ -280,14 +280,14 @@ fieldset[disabled] .btn-xl-opaque:hover
 }
 .navbar-custom .navbar-toggle 
 {
-    background-color: #CE1B39;
-    border-color: #CE1B39;
+    background-color: #6cc24a;
+    border-color: #6cc24a;
     font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:hover 
 {
-    background-color: #CE1B39
+    background-color: #6cc24a
 }
 .navbar-custom .nav li a 
 {
@@ -297,20 +297,20 @@ fieldset[disabled] .btn-xl-opaque:hover
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:hover 
 {
-    color: #CE1B39;
+    color: #6cc24a;
     outline: 0
 }
 .navbar-custom .navbar-nav>.active>a 
 {
-    border-radius: 0;
+    border-radius: 100px;
     color: #fff;
-    background-color: #CE1B39
+    background-color: #6cc24a
 }
 .navbar-custom .navbar-nav>.active>a:focus,
 .navbar-custom .navbar-nav>.active>a:hover 
 {
     color: #fff;
-    background-color: #ED2946
+    background-color: #97d700
 }
 @media (min-width: 768px) 
 {
@@ -332,7 +332,7 @@ fieldset[disabled] .btn-xl-opaque:hover
     }
     .navbar-custom .navbar-nav>.active>a 
     {
-        border-radius: 0px
+        border-radius: 100px
     }
     .navbar-custom.affix 
     {
@@ -364,7 +364,7 @@ header .intro-text
 }
 header .intro-text .intro-lead-in 
 {
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     font-weight: 200;
     font-size: 14px;
@@ -379,7 +379,7 @@ header .intro-text .intro-lead-in
 }
 header .intro-text .intro-heading 
 {
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     
     text-transform: uppercase;
     font-weight: 500;
@@ -396,7 +396,7 @@ header .intro-text .intro-heading
     }
     header .intro-text .intro-lead-in 
     {
-        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
         font-weight: 300;
         font-size: 16px;
@@ -411,7 +411,7 @@ header .intro-text .intro-heading
     }
     header .intro-text .intro-heading 
     {
-        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
         
         text-transform: uppercase;
         font-weight: 500;
@@ -423,7 +423,7 @@ header .intro-text .intro-heading
 #portfolio .portfolio-item .portfolio-caption p,
 section h3.section-subheading 
 {
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section {
     padding: 100px 0
@@ -465,7 +465,7 @@ section h3.section-subheading
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover 
 {
-    background: rgba(206, 27, 57, .8);
+    background: rgba(151, 215, 0, .8);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -515,7 +515,7 @@ section h3.section-subheading
 }
 footer span.copyright,
 footer ul.quicklinks {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 #portfolio * {
     z-index: 2
@@ -535,8 +535,8 @@ footer ul.quicklinks {
     bottom: 0;
     position: absolute;
     content: "";
-    width: 2px;
-    background-color: #f1f1f1;
+    width: 7px;
+    background-color: #fff;
     left: 40px;
     margin-left: -1.5px
 }
@@ -579,10 +579,10 @@ footer ul.quicklinks {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #CE1B39;
+    background-color: #6cc24a;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #fff;
     text-align: center
 }
 .timeline>li .timeline-image h4 {
@@ -696,7 +696,11 @@ footer ul.quicklinks {
 }
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff
+    
+    /* commented out coloured border...
+    border: 7px solid #eee
+    */
+
 }
 .team-member h4 
 {
@@ -746,29 +750,29 @@ section#contact .form-group textarea.form-control {
     height: 120px
 }
 section#contact .form-control:focus {
-    border-color: #CE1B39;
+    border-color: #6cc24a;
     box-shadow: none
 }
 section#contact::-webkit-input-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 section#contact:-moz-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 section#contact::-moz-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 section#contact:-ms-input-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
@@ -811,7 +815,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #CE1B39
+    background-color: #6cc24a
 }
 .btn.active,
 .btn:active,
@@ -843,7 +847,7 @@ ul.social-buttons li a:hover {
 }
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px
 }
 .portfolio-modal .modal-content ul.list-inline {
@@ -890,11 +894,11 @@ ul.social-buttons li a:hover {
 }
 ::-moz-selection {
     text-shadow: none;
-    background: #CE1B39
+    background: #6cc24a
 }
 ::selection {
     text-shadow: none;
-    background: #CE1B39
+    background: #6cc24a
 }
 img::selection {
     background: 0 0
