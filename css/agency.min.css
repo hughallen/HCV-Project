@@ -55,7 +55,7 @@ p
 }
 p.large 
 {
-    font-size: 16px
+    font-size: 30px
 }
 a,
 a.active,
@@ -696,10 +696,7 @@ footer ul.quicklinks {
 }
 .team-member img {
     margin: 0 auto;
-    
-    /* commented out coloured border...
-    border: 7px solid #eee
-    */
+    border: 7px solid #ffffff;
 
 }
 .team-member h4 
