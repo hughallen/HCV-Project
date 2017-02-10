@@ -731,7 +731,8 @@ footer ul.quicklinks {
 aside.clients img {
     margin: 50px auto
 }
-section#contact {
+section#contact 
+{
     background-color: #eee;
     /*background-image: url(../img/header-bg.png);*/
     background-position: center;
@@ -929,3 +930,4 @@ video#bgvid
     background: url(img/videobg.jpg) no-repeat;
     background-size: cover; 
 }
+

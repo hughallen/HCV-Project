@@ -43,62 +43,74 @@
 </head>
 
 <body>
-
     <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
 
+                <form action="login.php" method="POST">
 
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4 text-center">
+                    <br><br><br>
 
-                        <form action="login.php" method="POST">
+                    <input type="text" class="form-control" name="uid" placeholder="Username"><br>
+                    <input type="password" class="form-control" name="pwd" placeholder="Password"><br>
+                    <button type="submit" class="btn btn-primary" > Log In </button>
 
-                             <br><br><br>
+                </form>
 
-                            <input type="text" class="form-control" name="uid" placeholder="Username"><br>
-                            <input type="password" class="form-control" name="pwd" placeholder="Password"><br>
-                            <button type="submit" class="btn btn-primary" > Log In </button>
+                <br><br><br>
 
-                        </form>
+                <?php
 
-                        <br><br><br>
+                    if (isset($_SESSION['id']))
+                    {
+                        echo $_SESSION['id'];
+                    }
+                    else 
+                    {
+                        echo "You are not logged in";
+                    }
 
-                        <?php
+                ?>
 
-                            if (isset($_SESSION['id']))
-                            {
-                                echo $_SESSION['id'];
-                            }
-                            else 
-                            {
-                                echo "You are not logged in";
-                            }
+                <br><br><br>
 
-                        ?>
+                <form action="signup.php" method="POST">
 
-                        <br><br><br>
+                    <input type="text" class="form-control" name="first" placeholder="First Name"><br>
+                    <input type="text" class="form-control" name="last" placeholder="Last Name"><br>
+                    <input type="text" class="form-control" name="uid" placeholder="Username"><br>
+                    <input type="password" class="form-control" name="pwd" placeholder="Password"><br>
+                    <button type="submit" class="btn btn-primary"> Sign Up </button>
 
-                        <form action="signup.php" method="POST">
+                </form>
 
-                            <input type="text" class="form-control" name="first" placeholder="First Name"><br>
-                            <input type="text" class="form-control" name="last" placeholder="Last Name"><br>
-                            <input type="text" class="form-control" name="uid" placeholder="Username"><br>
-                            <input type="password" class="form-control" name="pwd" placeholder="Password"><br>
-                            <button type="submit" class="btn btn-primary"> Sign Up </button>
+                <br><br><br>
 
-                        </form>
-
-                        <br><br><br>
-
-                        <form action="logout.php">
+                <form action="logout.php">
                                 
-                            <button class="btn btn-primary"> Log Out </button>
+                    <button class="btn btn-primary"> Log Out </button>
 
-                        </form>
+                </form>
 
-                    </div>
-                </div>
-
+            </div>
+        </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
 </body>
 
