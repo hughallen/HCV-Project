@@ -570,10 +570,10 @@ section#contact .form-group textarea {
   padding: 20px;
 }
 section#contact .form-group input.form-control {
-  height: auto;
+  height: 60;
 }
 section#contact .form-group textarea.form-control {
-  height: 236px;
+  height: 230px;
 }
 section#contact .form-control:focus {
   border-color: #fed136;

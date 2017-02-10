@@ -118,7 +118,7 @@
                         <i class="fa fa-hospital-o fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="about-heading">What Happened</h4>
-                    <p class="text-muted large">In the late 1970’s and early 1990’s pregnant Irish women were exposed to the hepatitis C virus (HCV)-contaminated Anti-D, a medication to prevent rhesus disease. Hundreds of Irish women were exposed to HCV-contaminated Anti-D but never showed any sign of infection.<br><br><br></p>
+                    <p class="text-muted">In the late 1970’s and early 1990’s pregnant Irish women were exposed to the hepatitis C virus (HCV)-contaminated Anti-D, a medication to prevent rhesus disease. Hundreds of Irish women were exposed to HCV-contaminated Anti-D but never showed any sign of infection.<br><br><br></p>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="about-heading">What We Learned</h4>
-                    <p class="text-muted large">People are exposed to viruses, such as colds and flu, all the time but only a small number of people actually become infected. Understanding why some people seem to be naturally protected can help us design new ways to combat viral infection. We think that these women have ‘super’ immune systems that protected them from HCV – and may actually be still protecting them from all sorts of other viral infections.<br><br><br></p>
+                    <p class="text-muted">People are exposed to viruses, such as colds and flu, all the time but only a small number of people actually become infected. Understanding why some people seem to be naturally protected can help us design new ways to combat viral infection. We think that these women have ‘super’ immune systems that protected them from HCV – and may actually be still protecting them from all sorts of other viral infections.<br><br><br></p>
                 </div>
             </div>
 
@@ -140,7 +140,7 @@
                         <i class="fa fa-search fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="about-heading">The Project</h4>
-                    <p class="text-muted large">We are embarking on a study targeting all women who were exposed to HCV-contaminated Anti-D between the years of 1977 and 1979. This study aims to explore the reasons why some women were naturally protected from HCV and show no signs of infection. We believe these women may hold the key to fighting off this serious liver disease as well as other viral infections.<br><br><br></p>
+                    <p class="text-muted">We are embarking on a study targeting all women who were exposed to HCV-contaminated Anti-D between the years of 1977 and 1979. This study aims to explore the reasons why some women were naturally protected from HCV and show no signs of infection. We believe these women may hold the key to fighting off this serious liver disease as well as other viral infections.<br><br><br></p>
                 </div>
             </div>
 
@@ -151,7 +151,7 @@
                         <i class="fa fa-user fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="about-heading">How You Can Help</h4>
-                    <p class="text-muted large">If you think that you were exposed to HCV-contaminated Anti-D in 1977-1979, but show no signs of infection, you could hold the key to our study. All you have to do is fill out the form in the contact section, or get in touch with us via telephone or email.</p><p class="text-accent large">087 791 3600<br><a href="mailto:tcdstudy2016@tcd.ie">TCDStudy2016@tcd.ie</a></p>
+                    <p class="text-muted">If you think that you were exposed to HCV-contaminated Anti-D in 1977-1979, but show no signs of infection, you could hold the key to our study. All you have to do is fill out the form in the contact section, or get in touch with us via telephone or email.</p><p class="text-accent large">087 791 3600<br><a href="mailto:tcdstudy2016@tcd.ie">TCDStudy2016@tcd.ie</a></p>
                 </div>
             </div>
 
@@ -366,68 +366,6 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-
-<!-- ***************************** PHP
-
-    	<?php
-    
-        // Check for Header Injections
-        function has_header_injection($str) {
-            return preg_match( "/[\r\n]/", $str );
-        }
-        
-        if (isset($_POST['submit'])) {
-            
-            echo ("mail sent!");
-
-            // Assign trimmed form data to variables
-            // Note that the value within the $_POST array is looking for the HTML "name" attribute, i.e. name="email"
-            $name   = trim($_POST['name']);
-            $email  = trim($_POST['email']);
-            $phone  = $_POST['phone']; // no need to trim message
-        
-            // Check to see if $name or $email have header injections
-            if (has_header_injection($name) || has_header_injection($email)) {
-                
-                die(); // If true, kill the script
-                
-            }
-            
-            // Add the recipient email to a variable
-            $to = "your@email.com";
-            
-            // Create a subject
-            $subject = "$name sent a message via your contact form";
-            
-            // Construct the message
-            $message .= "Name: $name\r\n";
-            $message .= "Email: $email\r\n\r\n";
-            $message .= "Phone:\r\n$phone";
-        
-            $message = wordwrap($message, 72); // Keep the message neat n' tidy
-        
-            // Set the mail headers into a variable
-            $headers = "MIME-Version: 1.0\r\n";
-            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
-            $headers .= "From: " . $name . " <" . $email . ">\r\n";
-            $headers .= "X-Priority: 1\r\n";
-            $headers .= "X-MSMail-Priority: High\r\n\r\n";
-            
-            // Send the email!
-            mail($to, $subject, $message, $headers);
-   		
-   		?>
-		<?php
-
-		} 
-		
-		else
-        {
-
-        ?>
-
-PHP ********************  --> 
-
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
@@ -436,62 +374,37 @@ PHP ********************  -->
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form method="post" action="" name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" name="name" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email Address *" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Your Email Address *" id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone Number *" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Your Phone Number *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Town *" name="town" id="town" required data-validation-required-message="Please enter your town.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your County *" name="county" id="county" required data-validation-required-message="Please enter your county.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Tell us how you heard about the project *" name="how" id="how" required data-validation-required-message="Please tell us how you heard about the project.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Do you have any questions for us?" name="questions" id="questions"></textarea>
+                                    <textarea class="form-control" placeholder="Do you have any questions for us?" id="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl" name="submit">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-
-<!-- ***************************** PHP
-
-		<?php
-
-      	}
-
-        ?>
-
-PHP ********************  --> 
-
         </div>
     </section>
 
@@ -505,6 +418,37 @@ PHP ********************  -->
                 </div>
             </div>
             <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://www.who.int/mediacentre/factsheets/fs164/en/" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/WHO.jpg" class="img-responsive img-centered-preview" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Hepatitis C Fact Sheet</h4>
+                        <p class="text-muted">The WHO</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://www.nmh.ie/_fileupload/Rhesus%20D%20and%20Transfusion/Rhesus%20Negative%20Blue%20May%202015.pdf" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Rhesus.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rhesus Negative</h4>
+                        <p class="text-muted">What It Means</p>
+                    </div>
+                </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -519,76 +463,7 @@ PHP ********************  -->
                         <p class="text-muted">A quick update</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/placeholder.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Title</h4>
-                        <p class="text-muted">Description</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/placeholder.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Title</h4>
-                        <p class="text-muted">Description</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/placeholder.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Title</h4>
-                        <p class="text-muted">Description</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/placeholder.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Title</h4>
-                        <p class="text-muted">Description</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/placeholder.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Title</h4>
-                        <p class="text-muted">Description</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -684,96 +559,6 @@ PHP ********************  -->
 
     <!-- Portfolio Modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Happy Friday</h2>
-                                <p class="item-intro text-muted">A quick update regarding the people who got in touch with the project.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/update.png" alt="">
-                                <p>Happy Friday, ladies and gentlemen!<br><br>Here's a quick update from us: 600 people have gotten in touch with us and we've sent out over 200 study packets to our volunteers!</p>
-                                <p><strong>This is bold text</strong><p>
-                                <p>This is a <a href="https://google.com">link</a></p>
-                                <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Happy Friday</h2>
-                                <p class="item-intro text-muted">A quick update regarding the people who got in touch with the project.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/update.png" alt="">
-                                <p>Happy Friday, ladies and gentlemen!<br><br>Here's a quick update from us: 600 people have gotten in touch with us and we've sent out over 200 study packets to our volunteers!</p>
-                                <p><strong>This is bold text</strong><p>
-                                <p>This is a <a href="https://google.com">link</a></p>
-                                <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Happy Friday</h2>
-                                <p class="item-intro text-muted">A quick update regarding the people who got in touch with the project.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/update.png" alt="">
-                                <p>Happy Friday, ladies and gentlemen!<br><br>Here's a quick update from us: 600 people have gotten in touch with us and we've sent out over 200 study packets to our volunteers!</p>
-                                <p><strong>This is bold text</strong><p>
-                                <p>This is a <a href="https://google.com">link</a></p>
-                                <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
