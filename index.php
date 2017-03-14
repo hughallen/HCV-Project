@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +44,7 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,6 +73,33 @@
                     <li>
                         <a class="page-scroll" href="#portfolio">More Information</a>
                     </li>
+
+                    <?php
+
+                        if (isset($_SESSION['id']))
+                        {
+                            echo"
+                            <li>
+                                <a href='analytics.php'>Analytics</a>
+                            </li>
+                            <li>
+                                <a href='logout_function.php'>Log Out</a>
+                            </li>
+                            ";
+                        }
+
+                        else 
+                        {
+                            echo"
+                            <li>
+                                <a href='login.php'>Log In</a>
+                            </li>
+                            ";
+                        }
+                    ?>
+
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -478,7 +511,7 @@
                     <ul class="list-inline social-buttons">
                         <li><a href="https://www.facebook.com/HCVStudyIreland/"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://twitter.com/HCV_Project/"><i class="fa fa-twitter"></i></a>
                         </li>
                     </ul>
                 </div>
